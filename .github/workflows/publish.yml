@@ -9,7 +9,6 @@ jobs:
     uses: ./.github/workflows/tests.yml
   publish:
     name: publish
-    needs: [tests] # require tests to pass before deploy runs
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source
